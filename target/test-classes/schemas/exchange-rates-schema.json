@@ -12,10 +12,11 @@
 	  "patternProperties": {
 		"^([A-Z]){3}$": { "type": "number" }
 	  },
-	  "additionalProperties": false,
+	  "additionalProperties": false
 	},
     "date": {
-	  "type": "string"
+	  "type": "string",
+      "pattern": "^\\d{4}\\-(0[1-9]|1[012])\\-(0[1-9]|[12][0-9]|3[01])$"
     }
   },
   "required": [
