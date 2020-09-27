@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "base": {
+      "type": "string"
+    },
+    "rates": {
+	  "type": "object",
+	  "properties": {
+		"/": {}
+	  },
+	  "patternProperties": {
+		"^([A-Z]){3}$": { "type": "number" }
+	  },
+	  "additionalProperties": false,
+	},
+    "date": {
+	  "type": "string"
+    }
+  },
+  "required": [
+    "base",
+    "rates",
+    "date"
+  ]
+}
